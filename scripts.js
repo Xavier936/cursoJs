@@ -1,39 +1,91 @@
-// objeto Math
-// objeto estatico-> se susa su nombre para utilizarlo
-/*
-Propiedades:
-Math.E - Math.Pi
-Metodos:
-Math.abs(x) -> devuleve el valor absoluto de x
-Math.ceil(x) -> devuelve el entero mas grande mayor o igual que un numero
-Math.floor(x) -> devuleve el entero mas pequeño menor o igual que in numero
-Math.pow(x,y) -> devuleve la potencia de x elevado a y
-Math.sqrt(x) -> devuelve la raiz cuadrad de x
-Math.random-> genera un numero psudoaleatorio entre 0 y 1
-Math.round(x) -> devuelve el valor de un numero redondeado al entero mas cercano
-Math.sign(x) -> devuelve el signo de la x, que indica si es positivo, negativo o cero
+//Condicionales
+/* 
+El flujo del programa se ejecuta de arriba hacia abajo
 */
-
-console.log(Math.E);
-console.log(Math.PI);
-
 let num = 5;
-let num2 = 6.9;
+let num2 = -5;
+let num3 = 0;
+//condicion simple
+if(num>0) console.log(`${num} es mayor que 0`); // si silo es una condicion no se requiere las llaves
 
-console.log(Math.abs(num));
-console.log(Math.ceil(num2));
-console.log(Math.floor(num2));
-console.log(Math.pow(num,2));
-console.log(Math.round(Math.random()*100));
-//console.log(Math.random()*(max -min) +min);
-console.log(Math.round(Math.random()*(10 -5) +5));
-console.log(Math.sign(num));
-console.log(Math.sqrt(num));
+//condicion compuesta
+ if(num2 > 0){
+    console.log(`${num2} es mayor que 0`);
+ }else{
+    console.log(`${num2}  no es mayor que 0`);
+ }
+
+ //condicional multiple
+
+ if(num3 > 0){
+    console.log(`${num3} es mayor que 0`);
+ }else if(num3 < 0){
+    console.log(`${num3} es menor que 0`);
+ }else{
+    console.log(`${num3} es igual a 0`);
+ }
+
+ /*
+ operadores lógicos:
+ && and
+ || O
+ */
+
+ if( num > 0 && num2 < 0){
+    console.log(`${num} es mayor que 0 y ${num2} es menor que 0`);
+ }
+
+if(num >0){
+    if (num2 < 0){
+        console.log(`${num} y ${num2} cumplen las condiciones`);
+    }
+
+}
+
+/*---------------------------------------------------*/
+
+if(num > 0){
+    if(num2 >0){
+        console.log(`${num} y ${num2} son mayores a 0`);
+    }else if(num2 < 0){
+        console.log(`${num} es mayor a 0 y ${num2} es menor a 0`);
+    }else{
+        console.log(`${num} es mayor a 0 y ${num2} es igual a 0`);
+    }
+}else if(num < 0){
+    if(num2 >0){
+        console.log(`${num} es menor a 0 y ${num2} es mayor a 0`);
+    }else if(num2 < 0){
+        console.log(`${num} y ${num2} son menores a 0`);
+    }else{
+        console.log(`${num} es menor a 0 y ${num2} es igual a 0`);
+    }
+}else{
+    if(num2 >0){
+        console.log(`${num} es igual a 0 y ${num2} es mayor a 0`);
+    }else if(num2 < 0){
+        console.log(`${num} es igual a 0 y ${num2} es menor a 0`);
+    }else{
+        console.log(`${num} y ${num2} son iguales a 0`);
+    }
+}
+
+let word = 'Hol';
+if(word.length > 4){
+    console.log(`${word} tiene mas de 4 letras`);
+}else if(word.length < 4){
+    console.log(`${word} tiene menos de 4 letras`);
+}else{
+    console.log(`${word} tiene 4 letras`);
+}
 
 
+let respuesta = true;
+let resp2 = false;
 
+if(respuesta == true) console.log('Respuesta tiene el valor true');
+if(respuesta == false) console.log('Respuesta tiene el valor flase');
 
-
-
-
+if(resp2) console.log('Respuesta tiene el valor true');
+if(!resp2) console.log('Respuesta tiene el valor false');
 
