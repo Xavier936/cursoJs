@@ -1,12 +1,22 @@
-let numero = 5;
+//operadores matematicos
 
-let palabra = "Hola mundo";
+/*let a =5;
+let b = 2;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);*/
 
-let respuesta = true;
+//operadores de incremento
+/*let a = 5;
 
-const PI = 3.14;
+console.log(a);
+console.log(--a);*/
 
+//operadores de asignacion
+let a = 10;
 
-numero = 54;
+a+= 4;
 
-console.log(numero);
+console.log(a);
