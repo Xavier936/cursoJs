@@ -1,91 +1,42 @@
-//Condicionales
 /* 
-El flujo del programa se ejecuta de arriba hacia abajo
+Ordenar 3 numeros de mayor a menor
+Permutaciones con 3 elementos
+Posibilidades 3!= 3+2+1 = 6
+abc = 123
+acb = 132
+bac = 213
+bca = 231
+cab = 312
+cba = 321
 */
-let num = 5;
-let num2 = -5;
-let num3 = 0;
-//condicion simple
-if(num>0) console.log(`${num} es mayor que 0`); // si silo es una condicion no se requiere las llaves
 
-//condicion compuesta
- if(num2 > 0){
-    console.log(`${num2} es mayor que 0`);
- }else{
-    console.log(`${num2}  no es mayor que 0`);
- }
+const numbers = document.getElementById('numbers');
+const result = document.getElementById('result');
 
- //condicional multiple
+let a= prompt('Introduca el primer numero');
+let b= prompt('Introduca el segundo numero');
+let c= prompt('Introduca el tercer numero');
 
- if(num3 > 0){
-    console.log(`${num3} es mayor que 0`);
- }else if(num3 < 0){
-    console.log(`${num3} es menor que 0`);
- }else{
-    console.log(`${num3} es igual a 0`);
- }
+numbers.textContent = `Los numeros introducidos son ${a}, ${b}, ${c}`;
 
- /*
- operadores lógicos:
- && and
- || O
- */
+/* Ejercicio */
 
- if( num > 0 && num2 < 0){
-    console.log(`${num} es mayor que 0 y ${num2} es menor que 0`);
- }
-
-if(num >0){
-    if (num2 < 0){
-        console.log(`${num} y ${num2} cumplen las condiciones`);
-    }
-
-}
-
-/*---------------------------------------------------*/
-
-if(num > 0){
-    if(num2 >0){
-        console.log(`${num} y ${num2} son mayores a 0`);
-    }else if(num2 < 0){
-        console.log(`${num} es mayor a 0 y ${num2} es menor a 0`);
+if(a >= b && a>=c){
+    if(b > c){
+        result.textContent = `El orden es: ${a}, ${b}, ${c} `;
     }else{
-        console.log(`${num} es mayor a 0 y ${num2} es igual a 0`);
+        result.textContent = `El orden es: ${a}, ${c}, ${b} `;
     }
-}else if(num < 0){
-    if(num2 >0){
-        console.log(`${num} es menor a 0 y ${num2} es mayor a 0`);
-    }else if(num2 < 0){
-        console.log(`${num} y ${num2} son menores a 0`);
+} else if(b >= a && b>=c){
+    if(a > c){
+        result.textContent = `El orden es: ${b}, ${a}, ${c} `;
     }else{
-        console.log(`${num} es menor a 0 y ${num2} es igual a 0`);
+        result.textContent = `El orden es: ${b}, ${c}, ${a} `;
     }
-}else{
-    if(num2 >0){
-        console.log(`${num} es igual a 0 y ${num2} es mayor a 0`);
-    }else if(num2 < 0){
-        console.log(`${num} es igual a 0 y ${num2} es menor a 0`);
+}else if(c >= a && c>=b){
+    if(a > b){
+        result.textContent = `El orden es: ${c}, ${a}, ${b} `;
     }else{
-        console.log(`${num} y ${num2} son iguales a 0`);
+        result.textContent = `El orden es: ${c}, ${b}, ${a} `;
     }
 }
-
-let word = 'Hol';
-if(word.length > 4){
-    console.log(`${word} tiene mas de 4 letras`);
-}else if(word.length < 4){
-    console.log(`${word} tiene menos de 4 letras`);
-}else{
-    console.log(`${word} tiene 4 letras`);
-}
-
-
-let respuesta = true;
-let resp2 = false;
-
-if(respuesta == true) console.log('Respuesta tiene el valor true');
-if(respuesta == false) console.log('Respuesta tiene el valor flase');
-
-if(resp2) console.log('Respuesta tiene el valor true');
-if(!resp2) console.log('Respuesta tiene el valor false');
-
