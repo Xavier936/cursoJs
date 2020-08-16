@@ -1,21 +1,26 @@
-let num = 6;
+//Operador ternario 
+//se usa cundo la condicion es true o false
+/*
+simple: (condicion) ? true : false
+con mas condiciones:
+ 
+(condicion) ?
+    (sentencia1, sentencia2)
+    :
+    (sentencia1, sentencia2)
+ */
 
-switch(num){
-    case 1: console.log('Num tiene el valor 1');
-    break;
-    case 2: console.log('Num tiene el valor 2');
-    break;
-    default: console.log('nNum no vale ni 1 ni 2');
-}
+let num = 2;
 
-switch(num){
-    case 1:
-    case 3:
-    case 5:
-    console.log(`${num} es impar`);
-    break;
-    case 2:
-    case 4:
-    case 6:
-    console.log(`${num} es par`);
-}
+(num % 2 == 0) ? console.log(`${num} es par`) : console.log(`${num} es impar`) 
+
+(num % 2 == 0) ?
+    (
+        console.log(`${num} es par`),
+        console.log(`${num} es par 2`)
+    )
+    :
+    (
+        console.log(`${num} es impar`),
+        console.log(`${num} es diferente de 2`)  
+    )
