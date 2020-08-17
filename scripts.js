@@ -1,28 +1,71 @@
-// bucle for
+// for of || for in
+
 /*
-es un bucle determinados que hay que especificar cuantas vueltas dara durante su ejecucion
-su sintaxis se compone de 3 partes
-    -iniciacion de la variable
-    -NUmero de vuletas
-    -incremento o deremento
+simplifica el bucle sin tener que darle un numero de vuletas ni realizar un incremento
 
-for(let i=0; 0<= 10; i++){
-    Codigo a ejecutar
+for of
+
+let names = ['Pedro','Pepe','Juan','Paco']
+for(let name of names){
+    console.log(name)
 }
 
-Durante su ejecucuion la variable i aumentara su valor en cada vuelta
+for in
 
-for(let i=0; i<=10; i++){
-    console.log(i)
+for(let name in names){
+    console.log(name)
 }
-1ra vuelta: i=0 ¿i<=3? 0 i++
-2da vuelta: i=1 ¿i<=3? 1 i++
-3ra vuelta: i=2 ¿i<=3? 2 i++
-4ta vuelta: i=2 ¿i<=3? 2 i++
-5ta vuelta: i=3 ¿i<=3? 3 fin del bucle
+1ra vuelta:0
+2da vuketa:1
+
+palabras reservadas
+break rompe el bucle
+continue se salta las(s) posicion(es) que le indiquemos y despues continua su ejecucion
 
 */
-let numbers = [45,32,33,67,90,23,36,32];
-for(let i=0; i<numbers.length; i++){
-    console.log(`i vale ${i} y el valor de esa posicion en el arrya es ${numbers[i]}`);
+
+let names = ['Pedro','Pepe','Juan','Paco'];
+
+/*for(let i = 0; i < names.length; i++){
+    if(names[i]==='Juan'){
+        break;
+    }
+    console.log(names[i]);
+}*/
+
+/*for(let i = 0; i < names.length; i++){
+    if(names[i]==='Juan'){
+        continue;
+    }
+    console.log(names[i]);
+}*/
+
+/*for(let name of names){
+    if(name==='Juan'){
+        continue;
+    }
+    console.log(name);
+
+}*/
+
+/*for(let name of names){
+    if(name==='Juan'){
+        break;
+    }
+    console.log(name);
+
+}*/
+
+/*for(let index in names){
+    if(names[index]==='Juan'){
+        continue;
+    }
+    console.log(index);
+}*/
+
+for(let index in names){
+    if(names[index]==='Juan'){
+        break;
+    }
+    console.log(index);
 }
