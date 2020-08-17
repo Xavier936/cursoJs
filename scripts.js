@@ -1,71 +1,15 @@
-// for of || for in
-
 /*
-simplifica el bucle sin tener que darle un numero de vuletas ni realizar un incremento
-
-for of
-
-let names = ['Pedro','Pepe','Juan','Paco']
-for(let name of names){
-    console.log(name)
-}
-
-for in
-
-for(let name in names){
-    console.log(name)
-}
-1ra vuelta:0
-2da vuketa:1
-
-palabras reservadas
-break rompe el bucle
-continue se salta las(s) posicion(es) que le indiquemos y despues continua su ejecucion
-
+1 - Solicita un nombre, la edad y muestra por consola el mensaje
+ "Hola ____, tienes ____ años y el año que viene tendrás ____ años"
 */
 
-let names = ['Pedro','Pepe','Juan','Paco'];
+const result = document.getElementById('result');
 
-/*for(let i = 0; i < names.length; i++){
-    if(names[i]==='Juan'){
-        break;
-    }
-    console.log(names[i]);
-}*/
+let nombre = prompt('Ingrese su nombre');
+let apellido = prompt('Ingrese su apellido');
+let edad = prompt('Ingrese su edad');
+//let edad2= '';
 
-/*for(let i = 0; i < names.length; i++){
-    if(names[i]==='Juan'){
-        continue;
-    }
-    console.log(names[i]);
-}*/
+result.textContent = `Hola ${nombre} ${apellido}, tienes ${edad} años y el año que viene tendras ${edad++} años`;
 
-/*for(let name of names){
-    if(name==='Juan'){
-        continue;
-    }
-    console.log(name);
 
-}*/
-
-/*for(let name of names){
-    if(name==='Juan'){
-        break;
-    }
-    console.log(name);
-
-}*/
-
-/*for(let index in names){
-    if(names[index]==='Juan'){
-        continue;
-    }
-    console.log(index);
-}*/
-
-for(let index in names){
-    if(names[index]==='Juan'){
-        break;
-    }
-    console.log(index);
-}
