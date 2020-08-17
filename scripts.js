@@ -1,49 +1,28 @@
-// Bucle while y do while
+// bucle for
 /*
-Se usan cuando queremos que un trozo de codigo se repita
-Existen bulces determinados e indeterminados
-Los determinados se usan cuando especificamos el numero de veces que se va a repetir
-    -Imprimir numeros del 1 al 10
-Los indeterminados se suan cuando no sabemos el nro de veces qeu se van a repetir
-    -Repetir mensaje de introducir contraseña
-La estrucura de un bucle siempre es la misma
-    Bucle{
-        Codigo a ejecutar
-    }
-*/
-/*
-Bucle While
-es un bucle indeterminado ya que no sabemos cunatas vueltas dara durante su ejecucion
-Sintaxis
-    condicion de salida
-    while(condicion){
-        Codigo a ejecutar
-    }
+es un bucle determinados que hay que especificar cuantas vueltas dara durante su ejecucion
+su sintaxis se compone de 3 partes
+    -iniciacion de la variable
+    -NUmero de vuletas
+    -incremento o deremento
 
-bucle Do While
-es un bucle indeterminado ya que no sabemos cunatas vueltas dara durante su ejecucion
-Su sintaxis
-    codigo a ejecutar
-    condicion de salida
-
-    do{
-        codigo a ejecutar
-    }while(condicion)
-
-*/
-
-let pass= '';
-
-/*while(pass != 'hola'){
-    pass = prompt('Indtroduzca su contraseña');
+for(let i=0; 0<= 10; i++){
+    Codigo a ejecutar
 }
 
-console.log('Fin del bucle');
+Durante su ejecucuion la variable i aumentara su valor en cada vuelta
+
+for(let i=0; i<=10; i++){
+    console.log(i)
+}
+1ra vuelta: i=0 ¿i<=3? 0 i++
+2da vuelta: i=1 ¿i<=3? 1 i++
+3ra vuelta: i=2 ¿i<=3? 2 i++
+4ta vuelta: i=2 ¿i<=3? 2 i++
+5ta vuelta: i=3 ¿i<=3? 3 fin del bucle
+
 */
-
-do{
-    pass = prompt('Indtroduzca su contraseña');
-    
-}while(pass != 'hola');
-console.log('Fin del bucle');
-
+let numbers = [45,32,33,67,90,23,36,32];
+for(let i=0; i<numbers.length; i++){
+    console.log(`i vale ${i} y el valor de esa posicion en el arrya es ${numbers[i]}`);
+}
